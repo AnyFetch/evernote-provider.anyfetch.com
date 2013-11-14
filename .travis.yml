@@ -1,0 +1,10 @@
+language: node_js
+services: mongodb
+node_js:
+- '0.10'
+before_script: npm install --dev
+script: npm test
+env:
+  - PROVIDER_CONNECT_URL="http://localhost:8000/init/connect"
+  - PROVIDER_CLUESTR_ID="CLUESTR-ID"
+  - PROVIDER_CLUESTR_SECRET="CLUESTR-SECRET"
