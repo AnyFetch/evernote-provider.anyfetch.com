@@ -25,7 +25,9 @@ module.exports = {
   evernote_consumer_key: process.env.EVERNOTE_CONSUMER_KEY,
   evernote_consumer_secret: process.env.EVERNOTE_CONSUMER_SECRET,
   evernote_callback: process.env.EVERNOTE_CALLBACK,
+  evernote_domainroot: process.env.EVERNOTE_DOMAINROOT,
 
+  
   connect_url: process.env.PROVIDER_CONNECT_URL, // Callback URI for cluestr
   cluestr_id: process.env.PROVIDER_CLUESTR_ID,
   cluestr_secret: process.env.PROVIDER_CLUESTR_SECRET,
