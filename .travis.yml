@@ -6,6 +6,12 @@ before_script: npm install --dev
 script: npm test
 env:
   global:
-    - PROVIDER_CONNECT_URL="http://localhost:8000/init/connect"
-    - PROVIDER_CLUESTR_ID="CLUESTR-ID"
-    - PROVIDER_CLUESTR_SECRET="CLUESTR-SECRET"
+  - EVERNOTE_CALLBACK="http://localhost:8000/init/callback"
+  - EVERNOTE_DOMAINROOT="https://sandbox.evernote.com"
+  - PROVIDER_CONNECT_URL="http://localhost:8000/init/connect"
+  - PROVIDER_CLUESTR_ID="CLUESTR-ID"
+  - PROVIDER_CLUESTR_SECRET="CLUESTR-SECRET"
+  - EVERNOTE_CONSUMER_KEY="anyfetch"
+  - secure: LD5uTQfQHRMmuVROSktvaBLub9PbJhwXGHFyJmLAis1poSrit0yV8cO66myMTixRrhIq60F0j8X8U1OhEiQYt0zLv64mQweMYlddKz5Po453wAvnTcCp+jeCwmKpMrv3rwZMoVm3FlJ5Dhhc1n7Lzqljq3yZlV0dqgFjeGtsZXc=
+  - secure: D/ZYUZ19lGAYNVMTK/uNfrllAJy8C27dxa2X1rKZmssnhXdgzwftaa5T13ni6E/tNOZY8iqA+qjcF8EtOHkd4jiSvHR3SJkdLZAvvDSbJe48147+3epjuOB2TYHyZ3Sd0bg/iuVxcU0OV3H0usDkCCsNxa/tOoO9UuhjUIyo9d0=
+  - secure: Ot4RggUE2XEgUdS7yXwy3ajrAejhndhleaXsgWK8LHaj7a57OPJYL+IxUMuln0PNK3Ngr6GP4hyzrwgEyxPgJAG7QWDsXSRDBsI/OWwJdiWS1YXlmBHGXZIqPKFZIut+A8NTxT8wf7D6rCM0C46zXe+BAPuSGpfG8qetVsGp3sQ=
