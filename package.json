@@ -23,7 +23,7 @@
   ],
   "dependencies": {
     "async": "0.2.x",
-    "request": "2.26.x",
+    "request": "2.30.x",
     "sspawn": "0.1.1",
     "evernote": "1.25.x",
     "html-to-text": "0.0.x",
