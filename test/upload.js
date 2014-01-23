@@ -2,6 +2,6 @@
 
 require('should');
 var request = require('supertest');
-var CluestrProvider = require('cluestr-provider');
+var AnyFetchProvider = require('anyfetch-provider');
 
-// Check datas are uploaded onto Cluestr
+// Check datas are uploaded onto AnyFetch
