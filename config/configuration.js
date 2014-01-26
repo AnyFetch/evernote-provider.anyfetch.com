@@ -28,7 +28,7 @@ module.exports = {
   evernote_domainroot: process.env.EVERNOTE_DOMAINROOT,
 
   
-  connect_url: process.env.PROVIDER_CONNECT_URL, // Callback URI for cluestr
-  cluestr_id: process.env.PROVIDER_CLUESTR_ID,
-  cluestr_secret: process.env.PROVIDER_CLUESTR_SECRET,
+  connect_url: process.env.PROVIDER_CONNECT_URL, // Callback URI for anyfetch
+  anyfetch_id: process.env.PROVIDER_ANYFETCH_ID,
+  anyfetch_secret: process.env.PROVIDER_ANYFETCH_SECRET,
 };
