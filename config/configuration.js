@@ -27,8 +27,9 @@ module.exports = {
   evernote_callback: process.env.EVERNOTE_CALLBACK,
   evernote_domainroot: process.env.EVERNOTE_DOMAINROOT,
 
-  
-  connect_url: process.env.PROVIDER_CONNECT_URL, // Callback URI for anyfetch
-  anyfetch_id: process.env.PROVIDER_ANYFETCH_ID,
-  anyfetch_secret: process.env.PROVIDER_ANYFETCH_SECRET,
+
+  connect_url: process.env.EVERNOTE_CONNECT_URL,
+  callback_url: process.env.EVERNOTE_CALLBACK_URL,
+  anyfetch_id: process.env.EVERNOTE_ANYFETCH_ID,
+  anyfetch_secret: process.env.EVERNOTE_ANYFETCH_SECRET,
 };

@@ -2,7 +2,7 @@
 
 // Load configuration and initialize server
 var anyfetchProvider = require('anyfetch-provider');
-var serverConfig = require('./lib/provider-evernote');
+var serverConfig = require('./lib/');
 
 var server = anyfetchProvider.createServer(serverConfig);
 
