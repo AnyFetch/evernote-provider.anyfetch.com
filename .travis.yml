@@ -8,8 +8,8 @@ env:
   global:
   - EVERNOTE_CALLBACK="http://localhost:8000/init/callback"
   - EVERNOTE_DOMAINROOT="https://sandbox.evernote.com"
-  - PROVIDER_CONNECT_URL="http://localhost:8000/init/connect"
-  - PROVIDER_ANYFETCH_ID="ANYFETCH-ID"
-  - PROVIDER_ANYFETCH_SECRET="ANYFETCH-SECRET"
+  - EVERNOTE_CONNECT_URL="http://localhost:8000/init/connect"
+  - EVERNOTE_ANYFETCH_ID="ANYFETCH-ID"
+  - EVERNOTE_ANYFETCH_SECRET="ANYFETCH-SECRET"
   - EVERNOTE_CONSUMER_KEY="anyfetch"
   - secure: LD5uTQfQHRMmuVROSktvaBLub9PbJhwXGHFyJmLAis1poSrit0yV8cO66myMTixRrhIq60F0j8X8U1OhEiQYt0zLv64mQweMYlddKz5Po453wAvnTcCp+jeCwmKpMrv3rwZMoVm3FlJ5Dhhc1n7Lzqljq3yZlV0dqgFjeGtsZXc=

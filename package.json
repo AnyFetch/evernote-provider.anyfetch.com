@@ -1,5 +1,5 @@
 {
-  "name": "anyfetch-google-contact-provider",
+  "name": "anyfetch-evernote-provider",
   "version": "0.1.0",
   "author": "Matthieu Bacconnier <matthieu.bacconnier@papiel.fr>",
   "bin": {
@@ -11,7 +11,7 @@
     "test": "NODE_ENV=test mocha -R spec -t 2500",
     "lint": "jshint lib/ test/ config/ bin/"
   },
-  "main": "./lib/provider-evernote",
+  "main": "./lib/",
   "repository": {
     "type": "git",
     "url": "https://github.com/Papiel/evernote.provider.anyfetch.com"
