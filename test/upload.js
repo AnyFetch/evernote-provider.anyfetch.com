@@ -4,4 +4,4 @@ require('should');
 var request = require('supertest');
 var AnyFetchProvider = require('anyfetch-provider');
 
-// Check datas are uploaded onto AnyFetch
+// TODO: Check that notes & files are uploaded to Anyfetch

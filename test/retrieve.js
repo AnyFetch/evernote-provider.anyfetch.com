@@ -2,4 +2,4 @@
 
 require('should');
 
-// Check datas are retrieved from PROVIDER
+// TODO: Check that notes are retrieved from Evernote

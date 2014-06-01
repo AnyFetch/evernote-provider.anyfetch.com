@@ -27,7 +27,8 @@
     "sspawn": "0.1.1",
     "evernote": "1.25.x",
     "html-to-text": "0.0.x",
-    "anyfetch-provider": ">=0.3.10"
+    "anyfetch-provider": ">=0.3.10",
+    "newrelic": "1.x.x"
   },
   "devDependencies": {
     "mocha": "1.18.x",
