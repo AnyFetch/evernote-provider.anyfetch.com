@@ -5,6 +5,10 @@
  * Most of the configuration can be done using system environment variables.
  */
 
+// Load environment variables from .env file
+var dotenv = require('dotenv');
+dotenv.load();
+
 // node_env can either be "development" or "production"
 var node_env = process.env.NODE_ENV || "development";
 
