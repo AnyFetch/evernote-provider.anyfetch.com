@@ -1,7 +1,7 @@
 # Evernote Anyfetch Provider
 > Visit http://developers.anyfetch.com for details about Anyfetch.
 
-Evernote provider that fetches notes via Evernote API.
+Evernote provider fetching notes via Evernote API.
 
 # How to install?
 
