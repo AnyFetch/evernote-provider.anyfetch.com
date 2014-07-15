@@ -14,7 +14,7 @@
   "main": "./lib/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Papiel/evernote.provider.anyfetch.com"
+    "url": "https://github.com/Papiel/evernote-provider.anyfetch.com"
   },
   "keywords": [
     "anyfetch",
