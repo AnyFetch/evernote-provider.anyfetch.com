@@ -35,5 +35,5 @@ module.exports = {
 
   providerUrl: process.env.PROVIDER_URL,
 
-  testToken: process.env.EVERNOTE_TEST_TOKEN
+  testToken: process.env.EVERNOTE_TEST_TOKEN || (process.env.EVERNOTE_TEST_TOKEN_PART1 + process.env.EVERNOTE_TEST_TOKEN_PART2)
 };

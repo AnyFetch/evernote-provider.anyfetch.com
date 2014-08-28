@@ -6,10 +6,9 @@ before_script: npm install --dev
 script: npm test
 env:
   global:
-  - EVERNOTE_CALLBACK="http://localhost:8000/init/callback"
+  - PROVIDER_URL="http://localhost:8000"
+  - ANYFETCH_API_ID="fake-app-id"
+  - ANYFETCH_API_SECRET="fake-app-secret"
   - EVERNOTE_DOMAINROOT="https://sandbox.evernote.com"
-  - EVERNOTE_CONNECT_URL="http://localhost:8000/init/connect"
-  - EVERNOTE_ANYFETCH_ID="ANYFETCH-ID"
-  - EVERNOTE_ANYFETCH_SECRET="ANYFETCH-SECRET"
-  - EVERNOTE_CONSUMER_KEY="anyfetch"
-  - secure: LD5uTQfQHRMmuVROSktvaBLub9PbJhwXGHFyJmLAis1poSrit0yV8cO66myMTixRrhIq60F0j8X8U1OhEiQYt0zLv64mQweMYlddKz5Po453wAvnTcCp+jeCwmKpMrv3rwZMoVm3FlJ5Dhhc1n7Lzqljq3yZlV0dqgFjeGtsZXc=
+  - secure: A+xDa4VYwp7vCHzYJuqKK3oHjthWO00oSZk9vAbBiMf4UiVDOK4Hd88N6GIxZYnscZef84kwTxE7/Vk6H4ay5i/w3dFzkUyEExDpfXd6MuWZwTiU0onT7Hh0KzgrxoBlXkliLHtIRa5f4bhMfdlnyBhfDpxpQBf3OFyu+l6DW8c=
+  - secure: D7OiCuNbDJvbvFpBUwQJZ+/z7M4NvlePgY1rb4llPSJ1k7shvuxqnJex1eRpB3iQAC5JLXpK58rP0hosr1RGrzmJHie9cCADdlM9ZR3Q3vHe7o1105DJLgmgwLQv3utgdqynSdP3dSgijeNu3WGRCsMA3y0gEdbARZRKxTfltHM=
