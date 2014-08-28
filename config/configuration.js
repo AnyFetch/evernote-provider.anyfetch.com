@@ -26,14 +26,14 @@ module.exports = {
   port: process.env.PORT || default_port,
   workers: process.env.WORKERS || 1, // Number of workers for upload tasks
 
-  evernote_consumer_key: process.env.EVERNOTE_CONSUMER_KEY,
-  evernote_consumer_secret: process.env.EVERNOTE_CONSUMER_SECRET,
-  evernote_callback: process.env.EVERNOTE_CALLBACK,
-  evernote_domainroot: process.env.EVERNOTE_DOMAINROOT,
+  evernoteKey: process.env.EVERNOTE_CONSUMER_KEY,
+  evernoteSecret: process.env.EVERNOTE_CONSUMER_SECRET,
+  evernoteRoot: process.env.EVERNOTE_DOMAINROOT,
 
+  appId: process.env.ANYFETCH_API_ID,
+  appSecret: process.env.ANYFETCH_API_SECRET,
 
-  connect_url: process.env.EVERNOTE_CONNECT_URL,
-  callback_url: process.env.EVERNOTE_CALLBACK_URL,
-  anyfetch_id: process.env.EVERNOTE_ANYFETCH_ID,
-  anyfetch_secret: process.env.EVERNOTE_ANYFETCH_SECRET,
+  providerUrl: process.env.PROVIDER_URL,
+
+  testToken: process.env.EVERNOTE_TEST_TOKEN
 };
