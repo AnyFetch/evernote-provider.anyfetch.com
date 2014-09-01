@@ -26,8 +26,8 @@ module.exports = {
   port: process.env.PORT || default_port,
   workers: process.env.WORKERS || 1, // Number of workers for upload tasks
 
-  evernoteKey: process.env.EVERNOTE_CONSUMER_KEY,
-  evernoteSecret: process.env.EVERNOTE_CONSUMER_SECRET,
+  evernoteKey: process.env.EVERNOTE_KEY,
+  evernoteSecret: process.env.EVERNOTE_SECRET,
   evernoteRoot: process.env.EVERNOTE_DOMAINROOT,
 
   appId: process.env.ANYFETCH_API_ID,

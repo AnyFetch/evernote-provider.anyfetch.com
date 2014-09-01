@@ -9,8 +9,8 @@ You'll need to define some environment variables:
 
 ```bash
 # Go to http://dev.evernote.com/doc/ to ask for an API key
-export EVERNOTE_CONSUMER_KEY="evernote-key"
-export EVERNOTE_CONSUMER_SECRET="evernote-secret"
+export EVERNOTE_KEY="evernote-key"
+export EVERNOTE_SECRET="evernote-secret"
 export EVERNOTE_CALLBACK="http://your-provider-server/init/callback"
 # change to https://sandbox.evernote.com for production
 # create a sandbox account for test : https://sandbox.evernote.com/Login.action?targetUrl=%2FHome.action
@@ -19,8 +19,8 @@ export EVERNOTE_DOMAINROOT="https://sandbox.evernote.com"
 
 ```bash
 # Go to https://dev.evernote.com/#apikey to ask for app id and secret
-export EVERNOTE_CONSUMER_KEY="root127"
-export EVERNOTE_CONSUMER_SECRET="679e19222719114b"
+export EVERNOTE_KEY="root127"
+export EVERNOTE_SECRET="679e19222719114b"
 
 # Provider URL, most probably https://your-host
 export PROVIDER_URL="http://localhost:3001"
