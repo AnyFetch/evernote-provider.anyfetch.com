@@ -74,7 +74,7 @@ describe("Workflow", function () {
           throw err;
         }
 
-        server.queue.create('addition', {_special: true, _anyfetchToken: 'fake_gc_access_token'}).priority('low').save();
+        server.queue.create('addition', {_special: true, _anyfetchToken: 'fake_gc_access_token', _anyfetchApiUrl: 'http://localhost:1337'}).priority('low').save();
       });
   });
 });
