@@ -20,6 +20,8 @@ if(node_env === "production") {
   default_port = 80;
 }
 
+var defaultEvernoteRoot = (node_env === 'development' || node_env === 'test') ? 'https://sandbox.evernote.com' : 'https://www.evernote.com';
+
 // Exports configuration for use by app.js
 module.exports = {
   env: node_env,
@@ -28,7 +30,7 @@ module.exports = {
 
   evernoteKey: process.env.EVERNOTE_API_ID,
   evernoteSecret: process.env.EVERNOTE_API_SECRET,
-  evernoteRoot: process.env.EVERNOTE_DOMAINROOT,
+  evernoteRoot: process.env.EVERNOTE_DOMAINROOT || defaultEvernoteRoot,
 
   appId: process.env.ANYFETCH_API_ID,
   appSecret: process.env.ANYFETCH_API_SECRET,
