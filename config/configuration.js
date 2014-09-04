@@ -22,8 +22,7 @@ if(node_env === "production") {
 
 var defaultEvernoteRoot = (node_env === 'development' || node_env === 'test') ? 'https://sandbox.evernote.com' : 'https://www.evernote.com';
 
-// Exports configuration for use by app.js
-module.exports = {
+var config = {
   env: node_env,
   port: process.env.PORT || default_port,
   workers: process.env.WORKERS || 1, // Number of workers for upload tasks
@@ -39,3 +38,12 @@ module.exports = {
 
   testToken: process.env.EVERNOTE_TEST_TOKEN || (process.env.EVERNOTE_TEST_TOKEN_PART1 + process.env.EVERNOTE_TEST_TOKEN_PART2)
 };
+
+config.clientConfig = {
+  consumerKey: config.evernoteKey,
+  consumerSecret: config.evernoteSecret,
+  sandbox: (config.env === "development" || config.env === "test")
+};
+
+// Exports configuration for use by app.js
+module.exports = config;
