@@ -11,5 +11,7 @@ env:
   - ANYFETCH_API_ID="fake-app-id"
   - ANYFETCH_API_SECRET="fake-app-secret"
   - EVERNOTE_DOMAINROOT="https://sandbox.evernote.com"
+  - EVERNOTE_API_ID="root127"
   - secure: A+xDa4VYwp7vCHzYJuqKK3oHjthWO00oSZk9vAbBiMf4UiVDOK4Hd88N6GIxZYnscZef84kwTxE7/Vk6H4ay5i/w3dFzkUyEExDpfXd6MuWZwTiU0onT7Hh0KzgrxoBlXkliLHtIRa5f4bhMfdlnyBhfDpxpQBf3OFyu+l6DW8c=
   - secure: D7OiCuNbDJvbvFpBUwQJZ+/z7M4NvlePgY1rb4llPSJ1k7shvuxqnJex1eRpB3iQAC5JLXpK58rP0hosr1RGrzmJHie9cCADdlM9ZR3Q3vHe7o1105DJLgmgwLQv3utgdqynSdP3dSgijeNu3WGRCsMA3y0gEdbARZRKxTfltHM=
+  - secure: YJbUaaK627donNkhVC6rCb7j+bcdX1xESpAB43gu7LYqyebh9+3I4S16wEt47m3/1zIChz8kGmWfl9bgDMltMmzxPR2GgE+RR1QZT62DLEI30mo7/hEZuheW5TvyJpOj5+fIkEuAO/g/owtheMn0eRxLYepwQPwYLdqpLBLK/wc=
