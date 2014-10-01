@@ -36,7 +36,14 @@ var config = {
 
   providerUrl: process.env.PROVIDER_URL,
 
-  testToken: process.env.EVERNOTE_TEST_TOKEN || (process.env.EVERNOTE_TEST_TOKEN_PART1 + process.env.EVERNOTE_TEST_TOKEN_PART2)
+  testToken: process.env.EVERNOTE_TEST_TOKEN || (process.env.EVERNOTE_TEST_TOKEN_PART1 + process.env.EVERNOTE_TEST_TOKEN_PART2),
+
+  opbeat: {
+    organization_id: process.env.OPBEAT_ORGANIZATION_ID,
+    app_id: process.env.OPBEAT_APP_ID,
+    secret_token: process.env.OPBEAT_SECRET_TOKEN,
+    silent: true
+  }
 };
 
 config.clientConfig = {
