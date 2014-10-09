@@ -38,6 +38,11 @@ var config = {
 
   testToken: process.env.EVERNOTE_TEST_TOKEN || (process.env.EVERNOTE_TEST_TOKEN_PART1 + process.env.EVERNOTE_TEST_TOKEN_PART2),
 
+  kue: {
+    attempts: 2,
+    backoff: {delay: 20 * 1000, type: 'fixed'}
+  },
+
   opbeat: {
     organization_id: process.env.OPBEAT_ORGANIZATION_ID,
     app_id: process.env.OPBEAT_APP_ID,
