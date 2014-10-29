@@ -36,7 +36,18 @@ var config = {
 
   providerUrl: process.env.PROVIDER_URL,
 
-  testToken: process.env.EVERNOTE_TEST_TOKEN || (process.env.EVERNOTE_TEST_TOKEN_PART1 + process.env.EVERNOTE_TEST_TOKEN_PART2)
+  testToken: process.env.EVERNOTE_TEST_TOKEN || (process.env.EVERNOTE_TEST_TOKEN_PART1 + process.env.EVERNOTE_TEST_TOKEN_PART2),
+
+  kue: {
+    attempts: 2,
+    backoff: {delay: 20 * 1000, type: 'fixed'}
+  },
+
+  opbeat: {
+    organizationId: process.env.OPBEAT_ORGANIZATION_ID,
+    appId: process.env.OPBEAT_APP_ID,
+    secretToken: process.env.OPBEAT_SECRET_TOKEN
+  }
 };
 
 config.clientConfig = {
