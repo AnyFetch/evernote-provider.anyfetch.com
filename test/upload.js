@@ -9,7 +9,7 @@ require('should');
 var config = require('../config/configuration.js');
 var serverConfig = require('../lib/');
 
-describe("Workflow", function () {
+describe("Workflow", function() {
   before(AnyFetchProvider.debug.cleanTokens);
 
   // Create a fake HTTP server
@@ -34,22 +34,6 @@ describe("Workflow", function () {
 
     var originalQueueWorker = serverConfig.workers.addition;
     serverConfig.workers.addition = function(job, cb) {
-      function checkSpy() {
-        if(spyPost && spyPost.callCount === 1) {
-          spyPost.callCount.should.eql(1);
-          spyPost.restore();
-          done();
-        }
-        else {
-          setTimeout(checkSpy, 100);
-        }
-      }
-
-      if(job.task._special) {
-        setTimeout(checkSpy, 500);
-        return cb(null);
-      }
-
       spyPost = sinon.spy(job.anyfetchClient, "postDocument");
 
       job.task.should.have.property('url');
@@ -73,8 +57,12 @@ describe("Workflow", function () {
         if(err) {
           throw err;
         }
-
-        server.queue.create('addition', {_special: true, _anyfetchToken: 'fake_gc_access_token', _anyfetchApiUrl: 'http://localhost:1337'}).priority('low').save();
       });
+
+    server.usersQueue.once('empty', function() {
+      spyPost.callCount.should.eql(1);
+      spyPost.restore();
+      done();
+    });
   });
 });
