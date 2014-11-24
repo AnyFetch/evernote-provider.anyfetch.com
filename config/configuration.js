@@ -31,6 +31,7 @@ var config = {
   evernoteSecret: process.env.EVERNOTE_API_SECRET,
   evernoteRoot: process.env.EVERNOTE_DOMAINROOT || defaultEvernoteRoot,
 
+  usersConcurrency: process.env.EVERNOTE_USERS_CONCURRENCY || 1,
   concurrency: process.env.EVERNOTE_CONCURRENCY || 1,
 
   appId: process.env.ANYFETCH_API_ID,
