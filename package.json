@@ -31,7 +31,7 @@
     "async": "0.2.x",
     "request": "2.34.x",
     "evernote": "1.25.x",
-    "anyfetch-provider": "^3.0.6",
+    "anyfetch-provider": "^3.0.7",
     "dotenv": "^0.4.0",
     "rarity": "2.1.x",
     "enml-js": "0.1.3",
