@@ -37,6 +37,7 @@ var config = {
   appId: process.env.ANYFETCH_API_ID,
   appSecret: process.env.ANYFETCH_API_SECRET,
 
+  appName: process.env.APP_NAME,
   providerUrl: process.env.PROVIDER_URL,
 
   testToken: process.env.EVERNOTE_TEST_TOKEN || (process.env.EVERNOTE_TEST_TOKEN_PART1 + process.env.EVERNOTE_TEST_TOKEN_PART2),
