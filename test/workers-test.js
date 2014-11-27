@@ -10,7 +10,7 @@ module.exports.addition = function(job, cb) {
 
   try {
     job.task.should.have.property('url');
-    job.task.should.have.property('id');
+    job.task.should.have.property('identifier');
     job.task.should.have.property('created');
     job.task.should.have.property('updated');
   } catch(e) {
