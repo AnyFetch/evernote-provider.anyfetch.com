@@ -43,7 +43,7 @@ var config = {
   testToken: process.env.EVERNOTE_TEST_TOKEN || (process.env.EVERNOTE_TEST_TOKEN_PART1 + process.env.EVERNOTE_TEST_TOKEN_PART2),
 
   retry: 2,
-  retryDelay: 20 * 1000,
+  retryDelay: 4 * 1000,
 
   opbeat: {
     organizationId: process.env.OPBEAT_ORGANIZATION_ID,
