@@ -55,6 +55,8 @@ var config = {
 config.clientConfig = {
   consumerKey: config.evernoteKey,
   consumerSecret: config.evernoteSecret,
+  callbackUrl: config.providerUrl + '/init/callback',
+  signatureMethod: "HMAC-SHA1",
   sandbox: (config.env === "development" || config.env === "test")
 };
 
