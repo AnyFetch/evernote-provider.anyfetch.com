@@ -30,7 +30,9 @@ describe("Workflow", function() {
   });
 
   it("should upload data to AnyFetch", function(done) {
+    this.timeout(20000);
     serverConfig.config.retry = 0;
+    serverConfig.config.concurrency = 1;
     var server = AnyFetchProvider.createServer(serverConfig.connectFunctions, __dirname + '/workers-test.js', __dirname + '/../lib/update.js', serverConfig.config);
 
     request(server)
