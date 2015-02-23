@@ -29,7 +29,6 @@
   ],
   "dependencies": {
     "async": "0.9.x",
-    "request": "2.53.x",
     "evernote": "1.25.x",
     "anyfetch-provider": "^3.1.0",
     "dotenv": "^0.5.1",
