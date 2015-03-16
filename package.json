@@ -30,7 +30,7 @@
   "dependencies": {
     "async": "0.9.x",
     "evernote": "1.25.x",
-    "anyfetch-provider": "^3.1.0",
+    "anyfetch-provider": "^3.1.1",
     "dotenv": "^0.5.1",
     "rarity": "2.1.x",
     "enml-js": "0.1.3",
